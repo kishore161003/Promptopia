@@ -20,7 +20,9 @@ const handler = nextAuth({
       return session;
     },
 
-
+    async redirect({ url, baseUrl }) {
+      return baseUrl;
+    },
 
     async signIn({ profile }) {
       try {
