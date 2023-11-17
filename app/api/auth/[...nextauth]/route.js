@@ -27,19 +27,18 @@ const handler = nextAuth({
     async signIn({ profile }) {
       try {
         await connectToDB();
-        if (await User.findOne({ email: profile.email })) {
+        if (!(await User.findOne({ email: profile.email }))) {
+          console.log(profile.name);
+          // if not, create user in database
+          await User.create({
+            email: profile.email,
+            username: profile.name.replace(" ", "").toLowerCase(),
+            image:
+              profile.picture ||
+              "https://res.cloudinary.com/dq7l8216n/image/upload/v1622711879/nextjs-mongodb-cloudinary/placeholder-image.jpg",
+          });
           return true;
         }
-        console.log(profile.name);
-        // if not, create user in database
-        await User.create({
-          email: profile.email,
-          username: profile.name.replace(" ", "").toLowerCase(),
-          image:
-            profile.picture ||
-            "https://res.cloudinary.com/dq7l8216n/image/upload/v1622711879/nextjs-mongodb-cloudinary/placeholder-image.jpg",
-        });
-        return true;
       } catch (error) {
         console.log(error);
         return false;
