@@ -20,10 +20,6 @@ const handler = nextAuth({
       return session;
     },
 
-    async redirect({ url, baseUrl }) {
-      return baseUrl;
-    },
-
     async signIn({ profile }) {
       try {
         await connectToDB();
@@ -46,9 +42,7 @@ const handler = nextAuth({
       }
     },
 
-    async redirect({ url, baseUrl }) {
-      return baseUrl;
-    },
+
   },
 });
 
