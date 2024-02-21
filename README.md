@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+===========promptopia==========
 
-## Getting Started
+Link- https://promptopia-kishorekp.vercel.app/
 
-First, run the development server:
+This project is a Ai Application's Prompt sharing Platform, built using NextAuth , NextJS and Tailwind CSS. The primary purpose of creating this project is for learning, practicing, and improving skills in NextJS.
 
-```bash
+Overview
+The Promptopia allows user to authenticate and Login using their Google Provider. The user Can Post their Prompt along with Tags which can used to Search Particular Topics Prompt. The user can Search the Prompt using UserId , tag and Prompt and copy them to ClipBoard.
+
+Technologies Used
+Nextjs: Next.js is a popular open-source React framework that enables the development of server-side rendered (SSR) React applications. 
+NextAuth : Provide authentication functionality to the Users.
+Tailwind CSS: A utility-first CSS framework for creating responsive and customizable designs.
+
+Some Snapshots From the Website:
+
+![Screenshot 2024-02-21 132534](https://github.com/kishore161003/Promptopia/assets/116169099/7727a266-61b4-4980-815b-bcf086516b2f)
+
+
+![Screenshot 2024-02-21 132622](https://github.com/kishore161003/Promptopia/assets/116169099/d8cad111-57d6-42a8-b658-7c744f3a910d)
+
+To get started with the project, follow these steps:
+
+Clone the Repository: Clone the Nike Clone Project repository to your local machine using the following command:
+
+git clone https://github.com/your-username/Promptopia.git
+Install Dependencies: Navigate to the project directory and install the dependencies by running the following command:
+
+Instructions To run the Application:
+
+Copy code
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions to the Promptopia Project are welcome! If you find any bugs or want to suggest improvements, please open an issue or submit a pull request !!!.
