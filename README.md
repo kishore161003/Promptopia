@@ -21,7 +21,7 @@ Some Snapshots From the Website:
 
 To get started with the project, follow these steps:
 
-Clone the Repository: Clone the Nike Clone Project repository to your local machine using the following command:
+Clone the Repository: Clone the Promptopia Project repository to your local machine using the following command:
 
 git clone https://github.com/your-username/Promptopia.git
 Install Dependencies: Navigate to the project directory and install the dependencies by running the following command:
